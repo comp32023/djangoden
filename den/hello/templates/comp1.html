@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\comp1.css'%}" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+ <body>
+      <div class = "cars4" >
+        <img src="{% static '\img\dens.png' %}" width="490px", height="200px" alt="">
+      </div>
+
+        <div class = cars2 >
+          <p>Готовые компьютеры по доступной цене!</p>
+        </div>
+
+            <div class = "cars3">
+                <div class = "knopki">
+          <a href="http://127.0.0.1:8000/index/" class="button_018" >
+            Главная
+          </a>
+         <a href="http://127.0.0.1:8000/index/" class="button_019" >
+            Отзывы
+          </a>
+         <a href="http://127.0.0.1:8000/index/" class="button_020" >
+            О нас
+          </a>
+                 </div>
+            </div>
+
+<div class = ears2>
+  <a href="http://127.0.0.1:8000/index/comp/" class="button_01" >
+    Компьютеры - Готовые сборки
+  </a>
+</div>
+
+<div class="block1-foto">
+    <img src="{% static '\img\comp1.png' %}" width="", height="" alt="">
+</div>
+<div class="block1-2">
+    <div class="block1-22">
+    {% for i in comp %}
+        <p1>{{ i.nazpk }}</p1>
+    {% endfor %}
+        </div>
+    <div class="block1-23">
+     {% for i in cena %}
+        <p2>{{ i.purchase_price }} ₽</p2>
+    {% endfor %}
+        </div>
+</div>
+
+<div class="block1-3">
+    <div class="block1-31">
+    {% for i in nalic %}
+        <p1>На складе: {{ i.info2 }}</p1>
+    {% endfor %}
+    </div>
+</div>
+
+<div class="block2">
+    <a href="" class="button_166" target="_blank">Купить</a>
+<p>-Процессор Celeron N4120(4 ядра, 4 потока, частота процессора 1.1 ГГц)<br>
+-Материнская плата(Сокет BGA1090,1 слот о.п.,объем оперативной памяти 4 ГБ)<br>
+-Видеокарта встроенная(Intel UHD Graphics 600)<br>
+-Накопитель данных (SSD) 120 GB 2.5" SATA</p>
+</div>
+
+<div class="block3">
+ <h1>Характеристики ПК DEXP Aquilon O271:</h1><br>
+<p2>Общие параметры:</p2><br>
+<p>Гарантия от производителя - 24 мес.<br>
+Модель - DEXP Aquilon O271<br>
+Линейка - DEXP Aquilon<br>
+Форм-фактор корпуса - Mini-Tower<br>
+Основной цвет - черный<br><br></p>
+<p2>Программное обеспечение:</p2><br>
+<p>Операционная система - без ОС<br><br></p>
+<p2>Процессор:</p2><br>
+<p>Модель процессора - Celeron N4120<br>
+Количество ядер процессора - 4<br>
+Количество энергоэффективных ядер -нет<br>
+Количество потоков - 4<br>
+Частота процессора - 1.1 ГГц<br>
+Автоматическое увеличение частоты - 2.6 ГГц</p><br><br>
+<p2>Материнская плата:</p2><br>
+<p>Сокет - BGA1090<br>
+Чипсет - SoC<br>
+Общее количество слотов оперативной памяти - 1</p><br><br>
+<p2>Оперативная память:</p2><br>
+<p>ип оперативной памяти - DDR4<br>
+Формат оперативной памяти -  SO-DIMM<br>
+Количество установленных модулей - 1<br>
+Общий объем оперативной памяти - 4 ГБ</p><br><br>
+<p2>Видеокарта</p2><br>
+<p>Тип видеокарты - встроенная<br>
+Модель интегрированной видеокарты - Intel UHD Graphics 600<br>
+Модель дискретной видеокарты - нет<br>
+Видеоразъемы - HDMI, VGA (D-Sub)</p><br><br>
+<p2>Накопители данных:</p2><br>
+<p>Конфигурация твердотельных накопителей (SSD) - 120 GB 2.5" SATA<br>
+Общий объем жестких дисков (HDD) -нет</p><br><br>
+<p2>Интерфейсы/разъемы:</p2><br>
+<p>USB порты USB 2.0 Type-A x4, USB 3.2 Gen1 Type-A x4<br>
+Аудиоразъемы на корпусе - 3.5 мм jack (микрофон), 3.5 мм jack (аудио)<br>
+Другие разъемы для периферии - PS/2 x2</p><br><br>
+<p2>Интернет/передача данных:</p2><br>
+<p>Проводной интерфейс (Ethernet LAN) - LAN 1 Гбит/с<br>
+Беспроводной интерфейс - нет<br>
+Дополнительная информация:<br>
+Оптический привод - нет<br>
+Кард-ридер - нет<br>
+Клавиатура и мышь в комплекте - нет<br>
+Окно на боковой стенке - нет</p><br><br>
+<p2>Габариты:</p2><br>
+<p>Длина: 380 мм<br>
+Ширина: 175 мм<br>
+Высота: 350 мм<br><br></p>
+</div>
+</body>
+</html>
