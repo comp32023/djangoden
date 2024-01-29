@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'den.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testdanil',
+        'NAME': 'testdanil2',
         'USER': 'postgres',
         # Не забываем здесь указать пароль доступа , например 123
         'PASSWORD': '123',
@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    'D:\djangoden\den\static',
+    'D:/djangoden/den/static',
 ]
 
 # Default primary key field type
