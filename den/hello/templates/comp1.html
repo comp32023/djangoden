@@ -28,8 +28,9 @@
 
 <div class="block1-2">
     <div class="block1-22">
-    {% for i in cena %}
-        <p1>{{ i.date_of_purchase }}</p1>
+    {% for i in people %}
+        <p1>{{ i.id_cena }}</p1>
+        <p1>{{ i.purchase_price }}</p1>
     {% endfor %}
         </div>
 </div>
