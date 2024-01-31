@@ -1,10 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# from .models import compcena
+from .models import product_information, sale
 
 
 def index(request):
     return HttpResponse("<h2>Главная</h2>")
+
+def televizori(request):
+    nazv1 = product_information.objects.filter(id_product=1)
+    cena1 = sale.objects.filter(id_sale=1)
+    data = {'nazv1': nazv1,'cena1': cena1}
+    return render(request, "comp1.html", data)
 
 # def vse(request):
 #     cena = compcena.objects.filter(id_cena=1)
