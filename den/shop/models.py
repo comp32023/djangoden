@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.db import models
+
 class product_information(models.Model):
     id_product = models.IntegerField(primary_key=True)
     name_product = models.CharField(200)
@@ -8,9 +10,6 @@ class product_information(models.Model):
     description = models.TextField(null=True)
     structure_goods = models.TextField(null=True)
     possibleboundaries = models.TextField(null=True)
-
-# CHAR и TEXT типы никогда не сохраняются как NULL в Django, поэтому null=True в этом нет необходимости
-
 
 class categories(models.Model):
     id_category = models.IntegerField(primary_key=True)
@@ -32,4 +31,3 @@ class orders(models.Model):
     purchase_note = models.TextField(null=True)
     date = models.IntegerField()
     order_status = models.TextField() # статус заказа(в ожидании, ожидает оплату, подтверждён)
-

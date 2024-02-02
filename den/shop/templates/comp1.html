@@ -28,11 +28,26 @@
 
 <div class="block1-2">
     <div class="block1-22">
-    {% for i in people %}
-        <p1>{{ i.id_cena }}</p1>
-        <p1>{{ i.purchase_price }}</p1>
+    {% for i in id %}
+        <p1>{{ i.id_category }}</p1>
+        <p1>{{ i.category_name }}</p1>
+        <br>
     {% endfor %}
-        </div>
+
+    {% for i in id2 %}
+        <p1>{{ i.id_category }}</p1>
+        <p1>{{ i.category_name }}</p1>
+        <br>
+    {% endfor %}
+
+    {% for i in id3 %}
+        <p1>{{ i.id_category }}</p1>
+        <p1>{{ i.category_name }}</p1>
+        <br>
+    {% endfor %}
+
+
+    </div>
 </div>
 
  </body>
