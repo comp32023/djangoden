@@ -1,7 +1,6 @@
 from django.db import models
-
-from django.db import models
-
+from django.conf import settings
+from django.contrib.auth.models import User
 class product_information(models.Model):
     id_product = models.IntegerField(primary_key=True)
     name_product = models.CharField(200)
@@ -31,3 +30,12 @@ class orders(models.Model):
     purchase_note = models.TextField(null=True)
     date = models.IntegerField()
     order_status = models.TextField() # статус заказа(в ожидании, ожидает оплату, подтверждён)
+
+
+class photo(models.Model):
+    id_photo = models.CharField(max_length=150)
+    id_product = models.CharField(200)
+    imagep = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.title

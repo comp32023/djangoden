@@ -1,21 +1,41 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import categories
+from .models import product_information, sale, photo
+
 
 
 def index(request):
     return HttpResponse("<h2>Главная</h2>")
 
 def test(request):
-    id = categories.objects.filter(id_category=1)
-    id2 = categories.objects.filter(id_category=2)
-    id3 = categories.objects.filter(id_category=3);
+    id = product_information.objects.filter(id_product=1)
+    price = sale.objects.filter(id_sale=1)
+    data = photo.objects.all()
+
     data = {
         'id': id,
-        'id2': id2,
-        'id3': id3,
+        'price': price,
+        'data': data,
+
     }
-    return render(request, "comp1.html", data)
+    return render(request, "tovar-televizor.html", data)
+
+def test2(request):
+    id = product_information.objects.filter(id_product=2)
+    price = sale.objects.filter(id_sale=2)
+    data = {
+        'id': id,
+        'price': price,
+    }
+    return render(request, "tovar-televizor.html", data)
+
+def testcar(request):
+    data = photo.objects.all()
+    data = {
+        'data': data,
+    }
+    return render(request, "test.html", data)
+
 
 # def vse(request):
 #     cena = compcena.objects.filter(id_cena=1)
