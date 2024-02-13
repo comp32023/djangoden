@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\catalog.css'%}">
+    <title>Document</title>
+</head>
+<body>
+<div class="fon"  alt=""></div>
+<div class="header">
+        <img src="{% static '/img/logo.png' %}" width="245px" height="140px" alt="">
+            <div class="line"></div>
+            <div class="adres"><h1>Г. Шумерля, улица Ленина,  дом 24</h1></div>
+                <div class="numb"><img src="{% static '/img/icons850.png' %}" width="50px" height="50px" alt=""><h1>+7 (965) 688-57-78</h1></div>
+
+                <div class="knopki">
+                    <ul>
+                        <li><a href="{% url 'catalog' %}" class="button_01">Каталог товаров</a></li>
+                        <li><a href="{% url 'delivery' %}" class="button_01">Доставка</a></li>
+                        <li><a href="{% url 'main' %}" class="button_01">О нас</a></li>
+                        <li><a href="{% url 'order' %}" class="button_02">Корзина</a></li>
+                    </ul>
+                </div>                     
+</div>
+
+<!-- <div class="main">
+    <div class="glav-catalog">
+        <a href="">Главная -</a>
+        <p> Каталог товаров</p>
+    </div>
+    <div class="vsetovari">
+        <div class="tovari">
+            <a href="" class="block"><img src="img/telek.png" width="148px" height="83.02"><h1>Телевизоры</h1></a>
+            <a href="" class="block"><img src="img/xolodol.png" width="148px" height="83.02"><h2>Холодильники</h2></a>
+            <a href="" class="block"><img src="img/noyt.png" width="148px" height="83.02"><h3>Ноутбуки</h3></a>
+        </div>
+            <div class="tovari2">
+                <a href="" class="block"><img src="img/kofemash.png" width="148px" height="83.02"><h1>Кофемашины</h1></a>
+                <a href="" class="block"><img src="img/proector.png" width="148px" height="83.02"><h2>Проекторы</h2></a>
+                <a href="" class="block"><img src="img/fleshka.png" width="148px" height="83.02"><h3>Флешки</h3></a>
+            </div>
+    </div>
+</div> -->
+    
+</div>
+</body> 
+</html>

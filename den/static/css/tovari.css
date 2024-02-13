@@ -1,16 +1,16 @@
-/* .fon {
-    width: 0 auto;
-    height: 3000px;
+.fon {
+    width: 1930px;
+    height: 1500px;
     position: absolute;
     background-repeat: no-repeat;
-    background-color: #D9D9D9;
+    background-color: #ffffff;
     margin-left: -20px;
     z-index: -1;
-} */
+}
 
 .header {
     width: 1920px;
-    height: 163px;  
+    height: 163px;
     background-color: #2E2F2F;
     margin: -9px -8px;
         
@@ -94,14 +94,6 @@
     background-color: #5A5E63;
 }
 
-.button_02:hover{
-    color: rgb(89, 124, 145); /* Меняем цвет текста */
-  }
-
-.button_01:hover{
-    color: rgb(89, 124, 145); /* Меняем цвет текста */
-}
-
 .knopki ul {
     margin: -6px -52px;
     display: flex;
@@ -136,15 +128,15 @@
 }
 
 .main {
-    /* width: auto;
-    height: auto; */
+width: 0px;
+height: 0px;
     position: absolute;
 }
 
 .glav-catalog {
     width: 500px;
     height: 34px;
-    margin: 34px 12px;
+    margin: 126px 457px;
     color: #7E7E83;
     font-size: 19px;
     font-family: 'Verdana';
@@ -175,121 +167,102 @@
     margin: -23px 303px;
 }
 
-.tovar-any {
-    height: 310%;
-    margin-left: 500px;
-    font-size: 18px;
+.glav-catalog h1 {
+    width: 300px;
+    font-size: 19px;
     font-family: 'Verdana';
+    color: #7E7E83;
+    margin: -23px 291px;
+    text-decoration: none;
 }
 
-.cart {
-    width: 19%;
-    margin: 0px -316px;
+.vsetovari {
+    width: 0px;
+    margin: -100px -60px;
 }
 
-.cart img{
-    border-radius: 10px;
+.tovari,.tovari2,.tovari3 {
+    width: 1117px;
+    height: 275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.vseopiitd {
-    width: 0 auto;
-    margin-top: -515px;
+.tovari {
+    margin: 124px 500px;
+}
+
+.tovari2 {
+    margin: 235px 500px;
+}
+
+.tovari3 {
+    margin: 230px 500px;
+}
+
+
+.tovar {
+    height: 430px;
+    margin-right: 80px;
+}
+
+.tovar h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.tovar a img {
+    border-radius: 13px;
 }
 
 .nazvanie {
-    font-size: 20px;
-    font-family: 'Verdana'; 
-    font-weight:"bold";
-    margin: -202px 225px;
-    height: 70px;
-    width: 43%;
-}
-
-.mailopis {
-    font-size: 17px;
-    font-family: 'Verdana'; 
-    margin: 208px 225px;
-}
-
-.vseopisanie {
-    width: 43%;
-    height: 35rem;
-    margin: -151px 225px;
-}
-
-.vseopisanie h1 {
-    font-size: 16px;
-    font-family: 'Verdana'; 
-}
-
-.opisanie {
-    width: 450px;
-    margin-top: 20px;
-    font-size: 16px;
-    /* font-family: 'Verdana'; */
-}
-
-.buyblock {
-    width: 301px;
-    height: 129px;
-    background-color: #ece9e9;
-    border-radius: 9px;
-    margin: 245px 882px;
+    width: 280px;
     position: absolute;
-    display: grid;
 }
 
-.buyblock h1{
-
-    width: 50%;
+.nazvanie a {
+    width: 10px;
+    font-size: 1.35rem;
+    line-height: 2rem;
     font-weight: 400;
-    font-size: 25px;    
-    justify-self: center;
-	align-self: center;
-    margin-top: -30px;
-    margin-left: 35px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nazvanie a:hover {
+    color: rgb(245, 50, 50); /* Меняем цвет текста */
+}
+
+.vkorziny {
+    margin-top: 125px;
 }
 
 .button_166 {
     display: inline-block !important;
-    background-color: #d63434 !important;
+    background-color: #e14242 !important;
     color: #ffffff !important;
     border-radius: 6px;
-    font-size: 15px !important;
+    font-size: 19px !important;
     text-decoration: none !important;
-    padding: 15px 31px !important;
-    margin-left: 50px;
-    margin-top: 65px;
+    padding: 11px 34px !important;
+    margin-left: 33px;
     transition: all 0.4s ease !important;
     position: absolute;
 }
+
 .button_166:hover{
     text-decoration: none !important;
     background-color: #b30e0e !important;
 }
 
-/* .tovari {
-    width: 1117px;
-    height: 546px;
-    margin: 124px 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
-
-.tovari2 {
-    width: 1117px;
-    height: 546px;
-    margin: -250px 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-    border-radius: 50px / 5px;
-}
 
 
-.tovar1 {
-    margin-right: 50px;
+/* .nazvanie a {
+    color: black;
+    font-size: 19px;
+    font-family: 'Verdana';
+    text-decoration: none;
 } */

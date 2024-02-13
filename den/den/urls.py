@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from shop import views
 from django.urls.conf import include
 from django.conf import settings
@@ -8,27 +8,21 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('comp1', views.test),
-    path('comp2', views.test2),
-    path('testcar', views.testcar),
+    # path('testcar', views.testcar),
 
-
-    # path('about/', views.vse),
-    # path('delivery/', views.about3),
-    # path('order/', views.about3),
-    # path('catalog/', views.about3),
-    # path('catalog/televizory-i-cifrovoe-tv/', views.about3),
-    # path('catalog/cold-storage/', views.about3),
-    # path('catalog/noytbyki/', views.about3),
-    # path('catalog/kofemashini/', views.about3),
-    # path('catalog/proektori/', views.about3),
-    # path('catalog/fleshki/', views.about3),
-
-
-
-    # path('login/', views.about3),
-    # path('index/comp/1', comp1, name='comp1'),
+    path('main/', views.index, name='main'),
+    path('delivery', views.page_dostavka, name='delivery'),
+    path('catalog/', views.catalog, name='catalog'),
+    path('order/', views.order2, name='order'),
+# Каталог товаров=================================================================================================================================================================================================
+    path('catalog/televizory-i-cifrovoe-tv/', views.televizory, name='catalog/-tv'),
+    path('catalog/cold-storage/', views.cold_storage, name='catalog/cold-storage'),
+    path('catalog/noytbyki/', views.noytbyki, name='catalog/noytbyki'),
+    path('catalog/kofemashini/', views.kofemashini, name='catalog/kofemashini'),
+    path('catalog/proektori/', views.proektori, name='catalog/proektori'),
+    path('catalog/fleshki/', views.fleshki, name='catalog/fleshki'),
+# Товары===========================================================================================================================================================================================
+    path('catalog/televizory-i-cifrovoe-tv/1', views.tovar, name='tovar1'),
 ]
 
 # включаем возможность обработки картинок

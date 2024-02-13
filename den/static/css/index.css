@@ -1,0 +1,168 @@
+.fon {
+    width: 1930px;
+    height: 1005px; 
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: #D9D9D9;
+    margin-left: -20px;
+    z-index: -1;
+}
+
+.header {
+    width: 1920px;
+    height: 163px;
+    background-color: #2E2F2F;
+    margin: -9px -8px;
+        
+}
+
+.header img {
+    margin-left: 498px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+.line {
+    width: 1177px;
+    height: 9px;
+    margin-top: 78px;
+    background-color: #D9D9D9;
+    float: right;
+}
+
+.adres h1 {
+    width: 359px;
+    height: 26px;
+    margin-top: 30px;
+    margin-left: 826px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "JOHN HANDY LET";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.numb {
+    width: 250px;
+    height: 50px;
+    margin-left: 82%;
+}
+
+.numb img {
+    margin-left: 0px;  
+}
+
+.numb h1 {
+    width: 200px;
+    height: 26px;
+    margin-top: 25px;
+    margin-left: 70px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "JOHN HANDY LET";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.knopki {
+    margin-left: 760px;
+    margin-top: 43px;
+    display: flex;
+}
+
+.button_01 {
+    border-radius: 30px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    fill: #5A5E63;
+    background-color: #5A5E63;
+}
+
+.button_02 {
+    border: 3px solid #EBDFDF;
+    border-radius: 30px;
+    border-color: #EBDFDF;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    fill: #5A5E63;
+    background-color: #5A5E63;
+}
+
+.knopki ul {
+    margin: -6px -52px;
+    display: flex;
+    flex: revert;
+    flex-direction: row;
+}
+
+.knopki ul li {
+    width: 280px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 350%; 
+    fill: #5A5E63;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.knopki ul li a {
+    margin: 0px 0px;
+    text-decoration: none;
+    color: #FCFDFF;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    width: 70%;
+    height: 70%;
+}
+
+.main {
+    width: 0;
+}
+
+.dannie, .dannie2 {
+    width: 1057px;
+    margin: 104px 489px /* margin: 85px 380px; */;
+}
+
+.dannie h1, .dannie p, .dannie p2 {
+    font-size: 24px;
+    font-family: 'Inter';
+}
+
+.dannie2 img {
+    margin: -116px 206px;
+    position: absolute;
+}
+
+.dannie2 h4 {
+    color: #000000;
+    font-family: 'Helvetica';
+    font-size: 22px;
+}
+
+.dannie2 p4 {
+    color: #1683C6;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    border-bottom: 1px dashed rgb(111, 157, 199);
+}
+
+
+.dannie2 p5, .dannie2 p6 {
+    color: #000000;
+    font-family: 'Helvetica';
+    font-size: 20px;
+}
+

@@ -18,8 +18,8 @@ class PersonAdmin(admin.ModelAdmin):
 class PersonAdmin(admin.ModelAdmin):
     pass
 
-#login - d15danild150
-#password - parko*****
+#login - danil
+#password - 123
 
 
 

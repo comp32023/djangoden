@@ -1,0 +1,246 @@
+.fon {
+    width: 1932px;
+    height: 1005px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: #D9D9D9;
+    margin-left: -20px;
+    z-index: -1;
+}
+
+.header {
+    width: 1920px;
+    height: 163px;
+    background-color: #2E2F2F;
+    margin: -9px -8px;
+        
+}
+
+.header img {
+    margin-left: 498px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+.line {
+    width: 1177px;
+    height: 9px;
+    margin-top: 78px;
+    background-color: #D9D9D9;
+    float: right;
+}
+
+.adres h1 {
+    width: 359px;
+    height: 26px;
+    margin-top: 30px;
+    margin-left: 826px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "JOHN HANDY LET";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.numb {
+    width: 250px;
+    height: 50px;
+    margin-left: 82%;
+}
+
+.numb img {
+    margin-left: 0px;  
+}
+
+.numb h1 {
+    width: 200px;
+    height: 26px;
+    margin-top: 25px;
+    margin-left: 70px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "JOHN HANDY LET";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+.knopki {
+    margin-left: 760px;
+    margin-top: 43px;
+    display: flex;
+}
+
+.button_01 {
+    border-radius: 30px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    fill: #5A5E63;
+    background-color: #5A5E63;
+}
+
+.button_02 {
+    border: 3px solid #EBDFDF;
+    border-radius: 30px;
+    border-color: #EBDFDF;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    fill: #5A5E63;
+    background-color: #5A5E63;
+}
+
+.knopki ul {
+    margin: -6px -52px;
+    display: flex;
+    flex: revert;
+    flex-direction: row;
+}
+
+.knopki ul li {
+    width: 280px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 350%; 
+    fill: #5A5E63;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.knopki ul li a {
+    margin: 0px 0px;
+    text-decoration: none;
+    color: #FCFDFF;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    width: 70%;
+    height: 70%;
+}
+
+.main {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+.glav-catalog {
+    width: 280px;
+    height: 34px;
+    margin: 126px 457px;
+    color: #7E7E83;
+    font-size: 19px;
+    font-family: 'Verdana';
+}
+
+.glav-catalog a {
+    text-decoration: none;
+    color: #7E7E83;
+}
+
+.glav-catalog a:hover {
+    color: rgb(89, 124, 145);
+
+}
+
+.glav-catalog p {
+    width: 180px;
+    margin: -23px 114px;
+}
+
+.vsetovari {
+    width: 0;
+    margin: -100px -60px;
+}
+
+
+.tovari {
+    width: 1203px;
+    height: 250px;
+    margin: 124px 403px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.tovari a,.tovari2 a{
+    text-decoration: none;
+}
+
+.tovari a h1, .tovari a h2, .tovari a h3,.tovari2 a h1, .tovari2 a h2, .tovari2 a h3 {
+    font-size: 19px;
+    font-family: 'Verdana';
+    font-weight: normal;
+    color: black;
+}
+
+.tovari a h1 {
+    margin: -41px 50px;
+}
+
+.tovari a h2 {
+    margin: -41px 40px;
+}
+
+.tovari a h3 {
+    margin: -41px 65px;
+}
+
+
+.tovari2 {
+    display: flex;
+    flex-direction: row;
+    margin: -125px 546px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
+}
+
+.tovari2 a h1{
+    margin: -41px 45px;
+}
+
+.tovari2 a h2{
+    margin: -41px 55px;
+}
+
+.tovari2 a h3{
+    margin: -41px 70px;
+}
+
+.block {
+    width: 226px;
+    height: 191.23px;
+    background-color: #FFFCFC;
+    -webkit-box-shadow: 2px 5px 10px 11px rgba(15, 22, 32, 0.2);
+    -moz-box-shadow: 2px 5px 10px 11px rgba(15, 22, 32, 0.2);
+    box-shadow: 2px 5px 10px 11px rgba(15, 22, 32, 0.2);
+    border-radius: 9px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.block a {
+    font-size: 25px;
+    font-family: 'Verdana';
+}
+
+.block img {
+    margin: 51px 38px;
+}
+
+.block2 {
+    margin-top: 130px;
+}
+
+
+
+
