@@ -8,10 +8,11 @@
 </head>
 <body>
 <div class="main">
-    {% for b in data %}
-    <a href="{{ b.book.url }}">{{ b.title }}</a>
-    <img src="{{ b.cover.url }}">
+    <div class="block">
+    {% for i in cart %}
+    <img src= "static/img/{{i.ph_image}}">
     {% endfor %}
-</div>
+    </div>
+
 </body>
 </html>
