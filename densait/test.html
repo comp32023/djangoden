@@ -1,18 +1,16 @@
-{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css\test.css'%}">
+    <link rel="stylesheet" href="css/test.css">
     <title>Document</title>
 </head>
 <body>
 <div class="header">
     <div class="chblock">
         <div class="belblock"></div>
-        {% for new in news %}
-        <div class="sinblock"><h1>hello world</h1><img src="/static/img/{{ new.news_image }}" alt=""></div>
-        {% endfor %}
+        <div class="sinblock"><h1>hello world</h1><p>hello world2</p></div>
     </div>
     </div>
 </div>

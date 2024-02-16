@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    'D:/djangoden/den/static',
+    '/den/shop/static',
 ]
 
 MEDIA_URL = 'img/'
