@@ -15,7 +15,7 @@ urlpatterns = [
      path('catalog/', views.catalog, name='catalog'),
      path('order/', views.order2, name='order'),
 #Каталог товаров=================================================================================================================================================================================================
-     # path('catalog/televizory-i-cifrovoe-tv/', views.televizory, name='catalog/-tv'),
+     path('catalog/televizory-i-cifrovoe-tv/', views.testcar, name='catalog/-tv'),
      # path('catalog/cold-storage/', views.cold_storage, name='catalog/cold-storage'),
      # path('catalog/noytbyki/', views.noytbyki, name='catalog/noytbyki'),
      # path('catalog/kofemashini/', views.kofemashini, name='catalog/kofemashini'),

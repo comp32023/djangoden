@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css\test.css'%}">
+    <link rel="stylesheet" href="{% static 'css\tovari.css'%}">
     <title>Document</title>
 </head>
 <body>
+<div class="fon"  alt=""></div>
 <div class="header">
-    <div class="chblock">
-        <div class="belblock"></div>
-        {% for new in testcar %}
-        <div class="sinblock"><h1>hello world</h1>{{ new.kateg }}</div>
-        {% endfor %}
-    </div>
-    </div>
+        <img src="{% static '/img/logo.png' %}" width="245px" height="140px" alt="">
+            <div class="line"></div>
+            <div class="adres"><h1>Г. Шумерля, улица Ленина,  дом 24</h1></div>
+                <div class="numb"><img src="{% static '/img/icons850.png' %}" width="50px" height="50px" alt=""><h1>+7 (965) 688-57-78</h1></div>
+
+
+                <div class="knopki">
+                    <ul>
+                        <li><a href="{% url 'catalog' %}" class="button_01">Каталог товаров</a></li>
+                        <li><a href="{% url 'delivery' %}" class="button_01">Доставка</a></li>
+                        <li><a href="{% url 'main' %}" class="button_01">О нас</a></li>
+                        <li><a href="{% url 'order' %}" class="button_01">Корзина</a></li>
+                    </ul>
+                </div>
 </div>
+
+<div class="main">
+    <div class="glav-catalog">
+        <a href="./index.html" class="glav-a">Главная -</a>
+        <a href="./katalog.html" class="glav-a2"> Каталог товаров -</a>
+        <a class="glav-a3"> Каталог товаров</a>
+    </div>
+        <div class="vsetovari">
+            <div class="tovari">
+                <div class="tovar">
+
+    <a href=""><img src="/static/img/" width="240px" height="200" alt=""></a>
+                    {% for i in price %}
+                        <h1>{{ i.price }} ₽</h1>
+                    {% endfor %}
+
+                    <div class="nazvanie">
+                        <a href="">
+                                {{ televizori }}
+<!--                            {% for i in name_tovar %}-->
+<!--                            {{ i.name_product }}-->
+<!--                            {% endfor %}-->
+                        </a>
+                    </div>
+                        <div class="vkorziny"><a  class="button_166" target="_blank">В корзину</a></div>
+                </div>
+           </div>
+
+
 </body>
 </html>
