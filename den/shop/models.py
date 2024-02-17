@@ -18,42 +18,42 @@ class productinformation(models.Model):
     id = models.IntegerField(verbose_name='ID', primary_key=True)
     name_product = models.CharField(max_length=150, verbose_name='Имя продукта')
     category = models.ForeignKey(categories, on_delete=models.CASCADE)
-    weight = models.TextField(null=True, blank='None')
     description = models.TextField(null=True, blank='None')
-    structure_goods = models.TextField(null=True, blank='None')
-    possible_boundaries = models.TextField(null=True, blank='None')
+    sale_product = models.TextField(null=True, blank='None')
+    image_product = models.ImageField(blank=True, null=True)
+    image_product2 = models.ImageField(blank=True, null=True)
 
     class Meta():
         verbose_name_plural = "Информация о товарах"
 
     def __str__(self):
-        return f"{self.id}, {self.name_product}, Категория продукта - {self.category_id}, Описание - {self.description}"
+        return f"{self.id}, {self.name_product}, Категория продукта - {self.category_id}"
 
 
-class sale(models.Model):
-    id_sale = models.IntegerField(primary_key=True)
-    price = models.IntegerField()
-    discounted_price = models.IntegerField(null=True, blank='None')
-    purchase_price = models.IntegerField(null=True, blank='None')
-    provider = models.TextField(null=True, blank='None')
-    note = models.TextField(null=True, blank='None')
-    product = models.OneToOneField(productinformation, on_delete=models.CASCADE)#Связь с другой таблицей
+# class sale(models.Model):
+#     id_sale = models.IntegerField(primary_key=True)
+#     price = models.IntegerField()
+#     discounted_price = models.IntegerField(null=True, blank='None')
+#     purchase_price = models.IntegerField(null=True, blank='None')
+#     provider = models.TextField(null=True, blank='None')
+#     note = models.TextField(null=True, blank='None')
+#     product = models.OneToOneField(productinformation, on_delete=models.CASCADE)#Связь с другой таблицей
+#
+#     class Meta():
+#         verbose_name_plural = "Цена товаров"
+#
+#     def __str__(self):
+#         return f"{self.id_sale}, {self.price}"
 
-    class Meta():
-        verbose_name_plural = "Цена товаров"
 
-    def __str__(self):
-        return f"{self.id_sale}, {self.price}"
-
-
-class photo(models.Model):
-    image = models.ImageField(blank=True, null=True)
-    note = models.TextField(null=True, blank='None')
-
-    class Meta():
-        verbose_name_plural = "Фотографии"
-    def __str__(self):
-        return f"{self.id},{self.note}"
+# class photo(models.Model):
+#     image = models.ImageField(blank=True, null=True)
+#     note = models.TextField(null=True, blank='None')
+#
+#     class Meta():
+#         verbose_name_plural = "Фотографии"
+#     def __str__(self):
+#         return f"{self.id},{self.note}"
 
 # class orders(models.Model):
 #     purchase = models.TextField()

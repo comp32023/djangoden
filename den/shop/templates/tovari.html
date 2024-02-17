@@ -22,7 +22,7 @@
                         <li><a href="{% url 'main' %}" class="button_01">О нас</a></li>
                         <li><a href="{% url 'order' %}" class="button_01">Корзина</a></li>
                     </ul>
-                </div>                     
+                </div>
 </div>
 
 <div class="main">
@@ -32,11 +32,10 @@
         <a class="glav-a3"> Каталог товаров</a>
     </div>
         <div class="vsetovari">
-
             <div class="tovari">
                 <div class="tovar">
                     {% for i in image %}
-<! картинка 1 —>    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+<! картинка 1 —>    <a href="{{ link }}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
                     {% for i in price %}
@@ -44,7 +43,7 @@
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
+                        <a href=" {{ link }} ">
                             {% for i in name_tovar %}
 <! имя товара 1 —>            {{ i.name_product }}
                             {% endfor %}
@@ -55,7 +54,7 @@
 
                 <div class="tovar">
                     {% for i in image2 %}
-<! картинка 2 —>    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+<! картинка 2 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
                     {% for i in price2 %}
@@ -63,7 +62,7 @@
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
+                        <a href="">
                             {% for i in name_tovar2 %}
 <! имя товара 2 —>              {{ i.name_product }}
                             {% endfor %}
@@ -74,7 +73,7 @@
 
                 <div class="tovar">
                     {% for i in image3 %}
-<! картинка 3 —>    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+<! картинка 3 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
                     {% for i in price3 %}
@@ -82,7 +81,7 @@
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
+                        <a href="">
                             {% for i in name_tovar3 %}
 <! имя товара 3 —>              {{ i.name_product }}
                             {% endfor %}
@@ -93,7 +92,7 @@
 
                 <div class="tovar">
                     {% for i in image4 %}
-<! картинка 4 —>     <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+<! картинка 4 —>     <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
                     {% for i in price4 %}
@@ -101,8 +100,8 @@
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar %}
+                        <a href="">
+                            {% for i in name_tovar4 %}
 <! имя товара 4 —>              {{ i.name_product }}
                             {% endfor %}
                         </a>
@@ -114,18 +113,18 @@
 
             <div class="tovari2">
                 <div class="tovar">
-                    {% for i in image %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image5 %}
+<! картинка 5 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price5 %}
+<! цена 5 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar5 %}
+<! имя товара 5 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -133,18 +132,18 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image2 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image6 %}
+<! картинка 6 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price2 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price6 %}
+<! цена 6 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar2 %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar6 %}
+<! имя товара 6 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -152,18 +151,18 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image3 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image7 %}
+<! картинка 7 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price3 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price7 %}
+<! цена 7 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar3 %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar7 %}
+<! имя товара 7 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -171,18 +170,18 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image4 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image8 %}
+<! картинка 8 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price4 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price8 %}
+<! цена 8 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar8 %}
+<! имя товара 8 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -190,21 +189,21 @@
                 </div>
             </div>
 
-            
+
             <div class="tovari3">
                 <div class="tovar">
-                    {% for i in image %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image9 %}
+<! картинка 9 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price9 %}
+<! цена 9 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar9 %}
+<! имя товара 9 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -212,18 +211,18 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image2 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image10 %}
+<! картинка 10 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price2 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price10 %}
+<! цена 10 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar2 %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar10 %}
+<! имя товара 10 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -231,18 +230,18 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image3 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image11 %}
+<! картинка 11 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price3 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price11 %}
+<! цена 11 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar3 %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar11 %}
+<! имя товара 11 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
@@ -250,25 +249,24 @@
                 </div>
 
                 <div class="tovar">
-                    {% for i in image4 %}
-                    <a href="{% url 'tovar1' %}"><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
+                    {% for i in image12 %}
+<! картинка 12 —>    <a href=""><img src="/static/img/{{ i.image }}" width="240px" height="200" alt=""></img></a>
                     {% endfor %}
 
-                    {% for i in price4 %}
-                    <h1>{{ i.price }} ₽</h1>
+                    {% for i in price12 %}
+<! цена 12 —>         <h1>{{ i.price }} ₽</h1>
                     {% endfor %}
 
                     <div class="nazvanie">
-                        <a href="{% url 'tovar1' %}">
-                            {% for i in name_tovar %}
-                                {{ i.name_product }}
+                        <a href="">
+                            {% for i in name_tovar12 %}
+<! имя товара 12 —>            {{ i.name_product }}
                             {% endfor %}
                         </a>
                     </div>
                         <div class="vkorziny"><a  class="button_166" target="_blank">В корзину</a></div>
                 </div>
             </div>
-            <div>
-</div>
-</body> 
+        </div>
+</body>
 </html>
