@@ -92,27 +92,3 @@ def fleshki(request):
     }
 
     return render(request, "tovari.html", context)
-
-
-# # Товары, их описание - =========================================================================================================================
-# def tovar(request):
-#     return render(request, "opisanietovara.html")
-#
-#
-# def tovar2(request):
-#     return render(request, "opisanietovara.html")
-
-# people = productinformation.objects.filter(id__range=(1, 3))
-# print(people)
-
-# # def test(request):
-# #     id = product_information.objects.filter(id_product=1)
-# #     price = sale.objects.filter(id_sale=1)
-# #
-# #     data = {
-# #         'id': id,
-# #         'price': price,
-# #
-# #     }
-# #     return render(request, "tovar-televizor.html", data)
-
