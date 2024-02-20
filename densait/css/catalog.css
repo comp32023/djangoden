@@ -134,12 +134,15 @@
 }
 
 .glav-catalog {
+    display: flex;
     width: 280px;
     height: 34px;
     margin: 126px 457px;
     color: #7E7E83;
     font-size: 19px;
     font-family: 'Verdana';
+    align-items: center;
+    justify-content: space-between;
 }
 
 .glav-catalog a {
@@ -154,7 +157,6 @@
 
 .glav-catalog p {
     width: 180px;
-    margin: -23px 114px;
 }
 
 .vsetovari {

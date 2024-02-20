@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import productinformation, categories
 
-
 def index(request):
     return render(request, "index.html")
 
@@ -19,42 +18,101 @@ def order2(request):
     return render(request, "korzina.html")
 
 
-#
-#
 # Каталог товаров - =========================================================================================================================
 
 
-# def cold_storage(request):
-#     return render(request, "tovari.html")
-#
-#
-# def noytbyki(request):
-#     return render(request, "tovari.html")
-#
-#
-# def kofemashini(request):
-#     return render(request, "tovari.html")
-#
-#
-# def proektori(request):
-#     return render(request, "tovari.html")
-#
-#
-# def fleshki(request):
-#     return render(request, "tovari.html")
+def lections_detail(request, lecture_id): # lecture_id
+    tovar = productinformation.objects.filter(id=lecture_id)
+    people = productinformation.objects.filter(category_id=1)
+    for person in people:
+        print(f"{person.id} - {person.name_product}")
+    # people = productinformation.objects.filter(id__range=(1, 12))
+    context = {
+        'tv': tovar,
+        'people': people,
+    }
+    return render(request, "opisanietovara.html", context)
+
+def televizory(request):
+    products = productinformation.objects.filter(category_id=1)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
+
+
+def cold_storage(request):
+    products = productinformation.objects.filter(category_id=2)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
+
+
+def noytbyki(request):
+    products = productinformation.objects.filter(category_id=3)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
+
+
+
+def kofemashini(request):
+    products = productinformation.objects.filter(category_id=4)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
+
+
+def proektori(request):
+    products = productinformation.objects.filter(category_id=5)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
+
+
+def fleshki(request):
+    products = productinformation.objects.filter(category_id=6)
+
+    context = {
+        'pr': products,
+    }
+
+    return render(request, "tovari.html", context)
 
 
 # # Товары, их описание - =========================================================================================================================
-def testcar(request):
-    # kateg = categories.objects.filter(id=id)
-    televizori = productinformation.objects.all().order_by("id")
+# def tovar(request):
+#     return render(request, "opisanietovara.html")
+#
+#
+# def tovar2(request):
+#     return render(request, "opisanietovara.html")
 
-    data = {
-        #'kateg': kateg,
-        'televizori': televizori,
-    }
-    return render(request, "test.html", data)
+# people = productinformation.objects.filter(id__range=(1, 3))
+# print(people)
 
+# # def test(request):
+# #     id = product_information.objects.filter(id_product=1)
+# #     price = sale.objects.filter(id_sale=1)
+# #
+# #     data = {
+# #         'id': id,
+# #         'price': price,
+# #
+# #     }
+# #     return render(request, "tovar-televizor.html", data)
 
-def tovar2(request):
-    return render(request, "opisanietovara.html")

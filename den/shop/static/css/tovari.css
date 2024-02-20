@@ -134,19 +134,21 @@ height: 0px;
 }
 
 .glav-catalog {
-    width: 500px;
+    display: flex;
+    width: 510px;
     height: 34px;
     margin: 126px 457px;
     color: #7E7E83;
     font-size: 19px;
     font-family: 'Verdana';
+    align-items: center;
+    justify-content: space-between;
 }
 
-.glav-a, .glav-a2, .glav-a3{
+.glav-a, .glav-a2{
     text-decoration: none;
     color: #7E7E83;
     display: block;
-   
 }
 
 .glav-a:hover,.glav-a2:hover{
@@ -158,13 +160,11 @@ height: 0px;
 }
 
 .glav-a2 {
-    width: 70%;
-    margin: -23px 114px;
+    width: 400px
 }
 
 .glav-a3 {
-    width: 35%;
-    margin: -23px 303px;
+    width: 400px
 }
 
 .glav-catalog h1 {
@@ -172,40 +172,24 @@ height: 0px;
     font-size: 19px;
     font-family: 'Verdana';
     color: #7E7E83;
-    margin: -23px 291px;
     text-decoration: none;
 }
 
-.vsetovari {
-    width: 0px;
-    margin: -100px -60px;
-}
-
-.tovari,.tovari2,.tovari3 {
-    width: 1117px;
-    height: 275px;
+.box {
+    margin-top: -50px;
+    margin-left: 350px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    width: 1178px;
+    height: 400px;
+    align-content: flex-start;
+    justify-content: space-between;
 }
-
-.tovari {
-    margin: 124px 500px;
-}
-
-.tovari2 {
-    margin: 235px 500px;
-}
-
-.tovari3 {
-    margin: 230px 500px;
-}
-
 
 .tovar {
-    height: 430px;
-    margin-right: 80px;
+    height: 480px;
+    /* margin-right: 80px; */
 }
 
 .tovar h1 {
@@ -245,6 +229,8 @@ height: 0px;
     background-color: #e14242 !important;
     color: #ffffff !important;
     border-radius: 6px;
+    width: 100px;
+    text-align: center;
     font-size: 19px !important;
     text-decoration: none !important;
     padding: 11px 34px !important;

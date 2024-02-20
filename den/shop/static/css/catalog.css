@@ -134,12 +134,15 @@
 }
 
 .glav-catalog {
+    display: flex;
     width: 280px;
     height: 34px;
     margin: 126px 457px;
     color: #7E7E83;
     font-size: 19px;
     font-family: 'Verdana';
+    align-items: center;
+    justify-content: space-between;
 }
 
 .glav-catalog a {
@@ -154,23 +157,19 @@
 
 .glav-catalog p {
     width: 180px;
-    margin: -23px 114px;
-}
-
-.vsetovari {
-    width: 0;
-    margin: -100px -60px;
 }
 
 
 .tovari {
-    width: 1203px;
-    height: 250px;
-    margin: 124px 403px;
+    margin-top: -100px;
+    margin-left: 450px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    width: 946px;
+    height: 400px;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
 .tovari a,.tovari2 a{
@@ -196,26 +195,6 @@
     margin: -41px 65px;
 }
 
-
-.tovari2 {
-    display: flex;
-    flex-direction: row;
-    margin: -125px 546px;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
-}
-
-.tovari2 a h1{
-    margin: -41px 45px;
-}
-
-.tovari2 a h2{
-    margin: -41px 55px;
-}
-
-.tovari2 a h3{
-    margin: -41px 70px;
-}
-
 .block {
     width: 226px;
     height: 191.23px;
@@ -224,7 +203,7 @@
     -moz-box-shadow: 2px 5px 10px 11px rgba(15, 22, 32, 0.2);
     box-shadow: 2px 5px 10px 11px rgba(15, 22, 32, 0.2);
     border-radius: 9px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 80px;
 }
 

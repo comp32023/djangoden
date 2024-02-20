@@ -185,7 +185,7 @@
 
 .cart {
     width: 19%;
-    margin: 0px -316px;
+      margin: 0px -350px;
 }
 
 .cart img{
@@ -226,8 +226,8 @@
 .opisanie {
     width: 450px;
     margin-top: 20px;
-    font-size: 16px;
-    /* font-family: 'Verdana'; */
+    font-size: 18px;
+    font-family: system-ui;
 }
 
 .buyblock {
@@ -268,29 +268,3 @@
     text-decoration: none !important;
     background-color: #b30e0e !important;
 }
-
-/* .tovari {
-    width: 1117px;
-    height: 546px;
-    margin: 124px 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
-
-.tovari2 {
-    width: 1117px;
-    height: 546px;
-    margin: -250px 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-    border-radius: 50px / 5px;
-}
-
-
-.tovar1 {
-    margin-right: 50px;
-} */

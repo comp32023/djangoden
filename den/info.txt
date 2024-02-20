@@ -1,2 +1,0 @@
-python -m venv .venv - Создание вирт. среды
-.venv\scripts\activate - активация вирт. среды

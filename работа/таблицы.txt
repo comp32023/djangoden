@@ -1,0 +1,77 @@
+информация о продукте таблица:
+CREATE TABLE product_information (
+	id_product integer NOT NULL,
+	name_product char(100) NOT NULL,
+	category_id integer NOT NULL,
+	weight text NULL,
+	description text NULL,
+	structure_goods text NULL,
+	possibleboundaries text NULL
+);
+
+id_product - айди продукта
+name_product - имя продукта
+category_id - айди категории идет пересылка на столбец id_category таблица(categories)
+weight - вес товара
+description - описание товара
+structure_goods - структура товара(его состав)
+possibleboundaries - возможные ограничения для лиц имеющих аллергию или непереносимость каких-либо ингредиентов
+====================================
+
+
+====================================
+Категории товаров таблица:
+CREATE TABLE categories (
+	id_category integer NOT NULL PRIMARY KEY,
+	category_name text NOT NULL
+);
+
+id_category - айди категории товара
+category_name - имя категории
+====================================
+
+
+
+====================================
+продажа(цена товаров таблица) таблица:
+CREATE TABLE sale(
+	id_sale integer NOT NULL PRIMARY KEY,
+	name_sale char(100) NOT NULL,
+	price integer NOT NULL,
+	discounted_price integer NULL check(discounted_price<price),
+	purchase_price integer NULL,
+	provider text NULL,
+	note text NULL
+);
+
+id_sale - айди продукта, внешний ключ на id основной таблицы с товарами (confectionery) 
+name_sale - имя продаваемого товара
+price - цена товара 
+discounted_price - цена товара со скидкой 
+price_regular_customers - цена для постоянных клиентов 
+purchase_price - закупка товара (стоимость производства товара) 
+provider - поставщик товара 
+note - примечание 
+====================================
+
+
+
+Заказы таблица:
+CREATE TABLE orders (
+	id_purchase integer NOT NULL PRIMARY KEY,
+	purchase text NOT NULL,
+	price integer  NOT NULL,
+	purchase_note text NULL,
+	date timestamp NOT NULL,
+	id_userreg integer NULL,
+	order_status text NOT NULL
+);
+
+id_purchase - айди заказа
+purchase - заказанные товары пользователем
+cost - цена заказа пользователя
+purchase_note - примечание к покупке(адрес доставки, имя, номер телефона, пожелания пользователя к покупке)
+date - дата покупки
+id_userreg - айди зарегистрированного пользователя, указывается только при авториазации на сайте, идет к столбцу зарегистрированных пользователей id_user таблица(registered_users)
+order_status - статус заказа(в ожидании, ожидает оплату, подтверждён)
+====================================

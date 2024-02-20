@@ -15,11 +15,10 @@ class categories(models.Model):
 
 
 class productinformation(models.Model):
-    id = models.IntegerField(verbose_name='ID', primary_key=True)
     name_product = models.CharField(max_length=150, verbose_name='Имя продукта')
     category = models.ForeignKey(categories, on_delete=models.CASCADE)
     description = models.TextField(null=True, blank='None')
-    sale_product = models.TextField(null=True, blank='None')
+    sale_product = models.IntegerField()
     image_product = models.ImageField(blank=True, null=True)
     image_product2 = models.ImageField(blank=True, null=True)
 
