@@ -1,5 +1,5 @@
 .fon {
-    width: 1932px;
+    width: 110%;
     height: 1005px;
     position: absolute;
     background-repeat: no-repeat;
@@ -16,7 +16,9 @@
         
 }
 
-.header img {
+.logo img {
+    width: 245px;
+    height: 140px;
     margin-left: 498px;
     margin-top: 13px;
     position: absolute;
@@ -48,17 +50,19 @@
 .numb {
     width: 250px;
     height: 50px;
-    margin-left: 82%;
+    margin-left: 1570px;
+    position: absolute;
 }
 
 .numb img {
-    margin-left: 0px;  
+    margin-top: 10px;
+    margin-left: 0px;
 }
 
 .numb h1 {
     width: 200px;
     height: 26px;
-    margin-top: 25px;
+    margin-top: -40px;
     margin-left: 70px;
     flex-shrink: 0;
     color: #FFF;
@@ -134,15 +138,12 @@
 }
 
 .glav-catalog {
-    display: flex;
     width: 280px;
     height: 34px;
     margin: 126px 457px;
     color: #7E7E83;
     font-size: 19px;
     font-family: 'Verdana';
-    align-items: center;
-    justify-content: space-between;
 }
 
 .glav-catalog a {
@@ -157,6 +158,7 @@
 
 .glav-catalog p {
     width: 180px;
+    margin: -23px 114px;
 }
 
 .vsetovari {
@@ -166,13 +168,15 @@
 
 
 .tovari {
-    width: 1203px;
-    height: 250px;
-    margin: 124px 403px;
+    margin-top: -100px;
+    margin-left: 450px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    width: 946px;
+    height: 400px;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
 .tovari a,.tovari2 a{
@@ -199,25 +203,6 @@
 }
 
 
-.tovari2 {
-    display: flex;
-    flex-direction: row;
-    margin: -125px 546px;
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); 
-}
-
-.tovari2 a h1{
-    margin: -41px 45px;
-}
-
-.tovari2 a h2{
-    margin: -41px 55px;
-}
-
-.tovari2 a h3{
-    margin: -41px 70px;
-}
-
 .block {
     width: 226px;
     height: 191.23px;
@@ -243,6 +228,315 @@
     margin-top: 130px;
 }
 
+/* Меню для телефона ================================================================================================================================================================================================================= */
 
+.contentmobile {
+    display: block;
+    z-index: 3;
+}
+.chblock {
+    width: 1088px;
+    height: 935px;
+    position: absolute;
+    margin: 306px 0px;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    Justify-content: space-between;
+    z-index: 3;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    border-radius: 8px;
+    justify-content: flex-start;
+}
+
+.chblock ul li {
+    list-style-type: none;
+}
+  
+.knmobile1, .knmobile2{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 103px;
+    padding: 10px 190px;
+    text-decoration:none;
+    color:#ffffff;
+    background:#a9a9a9;
+    border-radius:100px;
+    border:2px solid #000000;
+}
+
+.knmobile1 {
+    width: 70%;
+    height: 191px;
+    margin-top: 14px;
+    margin-left: -53px;
+    color: black;
+    text-align: center;
+}
+
+.knmobile1:hover{
+    background:#e5f0e8;
+    color:#050402;
+    transition: all 0.2s ease;
+}
+
+.knmobile2 {
+    width: 70%;
+    height: 191px;
+    padding: 10px 190px;
+    margin-top: 7px;
+    margin-left: -53px;
+    color: rgb(233, 7, 7);
+    text-align: center;
+}
+  
+.knmobile2:hover{
+    border:2px rgb(1, 235, 60)000000;
+}
+
+/* Меню для телефона end ========================================================================================================================================================================== */
+
+
+@media (min-width:1201px ) and (max-width: 5000px){
+    .menumob {
+        display: none;
+    }
+}
+
+@media (min-width:700px ) and (max-width: 1200px){
+
+    .menumob {
+        display: none;
+    }
+
+ .adres h1{
+    width: 500px;
+    font-size: 31px;
+ }
+
+ .numb h1 {
+    font-size: 25px;
+ }
+
+ .knopki ul li a {
+    font-size: 38px;
+ }
+
+ /* .glav-catalog {
+    font-size: 38px;
+ } */
+}
+
+
+@media (min-width:501px ) and (max-width: 700px){
+
+    .menumob {
+        display: none;
+    }
+
+    .numb img {
+        display: none;
+    }
+    
+    .logo img {
+        width: 544px;
+        height: 311px;
+        margin-left: 56px;
+        margin-top: 81px;
+    }
+
+    .knopki ul li {
+        width: 140%;
+    }
+
+    .knopki ul li a{
+        width: 96%;
+        height: 160%;
+    }
+
+    .adres h1 {
+        width: 720px;
+        font-size: 48px;
+        margin-top: 103px;
+    }
+   
+    .numb h1 {
+        width: 383px;
+        margin-top: 33px;
+        margin-left: -754px;
+        font-size: 46px;
+    }
+   
+    .knopki {
+        margin-top: 253px;
+    }
+
+    .knopki ul li a {
+        font-size: 66px;
+    }
+
+    .line {
+        margin-top: 241px;
+    }
+
+
+    .header {
+        height: 474px;
+    }
+   
+    /* .glav-catalog {
+       font-size: 38px;
+    } */
+   }
+
+   @media (min-width:401px ) and (max-width: 500px){
+    .menumob {
+        display: block;
+        position: absolute;
+        margin: 172px 1087px;
+    }
+
+    .chblock {
+        margin: 12px 211px;
+    }
+    
+    .menumob img {
+        width: 352px;
+        height: 288px;
+    }
+
+    .numb img{
+        display: none;
+    }
+
+    .knopki{
+        display: none;
+    }
+    .adres{
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .header{
+        width: 1664px;
+        height: 500px;
+    }
+
+    .box {
+        width: 300px;
+    }
+
+    .logo img {
+        width: 645px;
+        height: 396px;
+        margin-left: 11px;
+        margin-top: 36px;
+    }
+
+    .adres h1{
+       width: 500px;
+       font-size: 31px;
+    }
+
+    .numb {
+        margin-left: 50%;
+        
+    }
+   
+    .numb h1 {
+        width: 516px;
+        font-size: 61px;
+        margin-top: 98px;
+    }
+   
+    .knopki ul li a {
+       font-size: 38px;
+    }
+   
+    .line {
+        display: none;
+    }
+
+    .numb {
+        display: none;
+    }
+   }
+
+
+   @media (min-width:1px ) and (max-width: 400px){
+    .menumob {
+        display: block;
+        position: absolute;
+        margin: 152px 948px;
+    }
+
+    .chblock {
+        margin: 12px 211px;
+    }
+    
+    .menumob img {
+        width: 339px;
+        height: 319px;
+    }
+    .numb {
+        display: none;
+    }
+
+
+    .knopki{
+        display: none;
+    }
+    .adres{
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .header{
+        width: 1474px;
+        height: 500px;
+    }
+
+    .box {
+        width: 300px;
+    }
+
+    .logo img {
+        width: 645px;
+        height: 396px;
+        margin-left: 11px;
+        margin-top: 36px;
+    }
+
+    .adres h1{
+       width: 500px;
+       font-size: 31px;
+    }
+
+    .numb {
+        margin-left: 50%;
+        
+    }
+   
+    .numb h1 {
+        width: 420px;
+       font-size: 50px;
+       margin-top: 105px;
+    }
+   
+    .knopki ul li a {
+       font-size: 38px;
+    }
+   
+    .line {
+        display: none;
+    }
+   }
 
 

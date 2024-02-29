@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<div class="fon" alt=""></div>
+<!--<div class="fon"></div>-->
 <div class="header">
         <img src="{% static '/img/logo.png' %}" width="245px" height="140px" alt="">
             <div class="line"></div>
@@ -28,29 +28,21 @@
     <div class="glav-catalog">
         <a href="{% url 'main' %}" class="glav-a">Главная -</a>
         <a href="{% url 'catalog' %}" class="glav-a2"> Каталог товаров -</a>
-            {% for post in tv %}
-        <a class="glav-a3"> {{ post.category }} </a>
+
+        <a class="glav-a3"> Товары </a>
     </div>
     <div class="tovar-any">
-        <div class="cart"><img src="img/multi1.avif" width="550px" height="550px" alt=""></div>
+            {% for post in tv %}
+        <div class="cart"><img src="/static/img/{{ post.image_product2 }}" width="550px" height="550px" alt=""></div>
         <div class="vseopiitd">
+
             <div class="nazvanie">
                 {{ post.name_product }}
             </div>
                 <div class="buyblock">
-                    <h1>{{ post.sale_product }}</h1>
+                    <h1>{{ post.sale_product }} ₽</h1>
                     <a  class="button_166" target="_blank">Добавить в корзину</a>
                 </div>
-<!--                    <div class="mailopis">Характеристики:<br>-->
-<!--                        Гарантия....2 <br>-->
-<!--                        Объем чаши....5 л<br>-->
-<!--                        Покрытие чаши....антипригарное керамическое<br>-->
-<!--                        Тип нагрева....3D<br>-->
-<!--                        Мощность....750 Вт<br>-->
-<!--                        Таймер отложенного старта....до 24 часов<br>-->
-<!--                        Тип управления....электронный<br>-->
-<!--                        Звуковой сигнал....Да-->
-<!--                    </div>-->
                     <div class="vseopisanie">
                         <h1>Все характеристики</h1>
                         <div class="opisanie">
@@ -63,3 +55,15 @@
 </div>
 </body> 
 </html>
+
+
+<!--                    <div class="mailopis">Характеристики:<br>-->
+<!--                        Гарантия....2 <br>-->
+<!--                        Объем чаши....5 л<br>-->
+<!--                        Покрытие чаши....антипригарное керамическое<br>-->
+<!--                        Тип нагрева....3D<br>-->
+<!--                        Мощность....750 Вт<br>-->
+<!--                        Таймер отложенного старта....до 24 часов<br>-->
+<!--                        Тип управления....электронный<br>-->
+<!--                        Звуковой сигнал....Да-->
+<!--                    </div>-->

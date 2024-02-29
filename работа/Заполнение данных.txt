@@ -343,21 +343,136 @@ USB 2.0
 
 
 	
+UPDATE shop_productinformation SET image_product = 'televizor1.png', image_product2 = 'televizor1opisanie.png'
+  WHERE id = '1';
+UPDATE shop_productinformation SET image_product = 'televizor2.png', image_product2 = 'televizor2opisanie.png'
+  WHERE id = '2';
+  UPDATE shop_productinformation SET image_product = 'televizor3.png', image_product2 = 'televizor3opisanie.png'
+  WHERE id = '3';
+  UPDATE shop_productinformation SET image_product = 'televizor4.png', image_product2 = 'televizor4opisanie.png'
+  WHERE id = '4';
+  UPDATE shop_productinformation SET image_product = 'televizor5.png', image_product2 = 'televizor5opisanie.png'
+  WHERE id = '5';
+  UPDATE shop_productinformation SET image_product = 'televizor6.png', image_product2 = 'televizor6opisanie.png'
+  WHERE id = '6';
+  UPDATE shop_productinformation SET image_product = 'televizor7.png', image_product2 = 'televizor7opisanie.png'
+  WHERE id = '7';
+  UPDATE shop_productinformation SET image_product = 'televizor8.png', image_product2 = 'televizor8opisanie.png'
+  WHERE id = '8';
+  UPDATE shop_productinformation SET image_product = 'televizor9.png', image_product2 = 'televizor9opisanie.png'
+  WHERE id = '9';
+  UPDATE shop_productinformation SET image_product = 'televizor10.png', image_product2 = 'televizor10opisanie.png'
+  WHERE id = '10';
+  UPDATE shop_productinformation SET image_product = 'televizor11.png', image_product2 = 'televizor11opisanie.png'
+  WHERE id = '11';
+  UPDATE shop_productinformation SET image_product = 'televizor12.png', image_product2 = 'televizor12opisanie.png'
+  WHERE id = '12';
 
 
 
 
-INSERT INTO public.shop_photo(
-	id, image)
-	VALUES (1, 'televizor1.avif'),
-	(2, 'televizor2.avif'),
-	(3, 'televizor3.avif'),
-	(4, 'televizor4.avif'),
-	(5, 'televizor5.avif'),
-	(6, 'televizor6.avif'),
-	(7, 'televizor7.avif'),
-	(8, 'televizor8.avif'),
-	(9, 'televizor9.avif'),
-	(10, 'televizor10.avif'),
-	(11, 'televizor11.avif'),
-	(12, 'televizor12.avif');
+	
+UPDATE shop_productinformation SET image_product = 'xolodos1.png', image_product2 = 'xolodos1opisanie.png'
+  WHERE id = '13';
+  UPDATE shop_productinformation SET image_product = 'xolodos2.png', image_product2 = 'xolodos2opisanie.png'
+  WHERE id = '14';
+  UPDATE shop_productinformation SET image_product = 'xolodos3.png', image_product2 = 'xolodos3opisanie.png'
+  WHERE id = '15';
+  UPDATE shop_productinformation SET image_product = 'xolodos4.png', image_product2 = 'xolodos4opisanie.png'
+  WHERE id = '16';
+  UPDATE shop_productinformation SET image_product = 'xolodos4.png', image_product2 = 'xolodos4opisanie.png'
+  WHERE id = '17';
+  UPDATE shop_productinformation SET image_product = 'xolodos3.png', image_product2 = 'xolodos3opisanie.png'
+  WHERE id = '18';
+  UPDATE shop_productinformation SET image_product = 'xolodos2.png', image_product2 = 'xolodos2opisanie.png'
+  WHERE id = '19';
+  UPDATE shop_productinformation SET image_product = 'xolodos1.png', image_product2 = 'xolodos1opisanie.png'
+  WHERE id = '20';
+  UPDATE shop_productinformation SET image_product = 'xolodos1.png', image_product2 = 'xolodos1opisanie.png'
+  WHERE id = '21';
+  UPDATE shop_productinformation SET image_product = 'xolodos2.png', image_product2 = 'xolodos2opisanie.png'
+  WHERE id = '22';
+  UPDATE shop_productinformation SET image_product = 'xolodos3.png', image_product2 = 'xolodos3opisanie.png'
+  WHERE id = '23';
+  UPDATE shop_productinformation SET image_product = 'xolodos4.png', image_product2 = 'xolodos4opisanie.png'
+  WHERE id = '24';
+
+
+
+
+UPDATE shop_productinformation SET image_product = 'noyt1.png', image_product2 = 'noyt1opisanie.png'
+  WHERE id = '25';
+  UPDATE shop_productinformation SET image_product = 'noyt2.png', image_product2 = 'noyt2opisanie.png'
+  WHERE id = '26';
+  UPDATE shop_productinformation SET image_product = 'noyt3.png', image_product2 = 'noyt3opisanie.png'
+  WHERE id = '27';
+  UPDATE shop_productinformation SET image_product = 'noyt4.png', image_product2 = 'noyt4opisanie.png'
+  WHERE id = '28';
+  UPDATE shop_productinformation SET image_product = 'noyt5.png', image_product2 = 'noyt5opisanie.png'
+  WHERE id = '29';
+  UPDATE shop_productinformation SET image_product = 'noyt6.png', image_product2 = 'noyt6opisanie.png'
+  WHERE id = '30';
+  UPDATE shop_productinformation SET image_product = 'noyt7.png', image_product2 = 'noyt7opisanie.png'
+  WHERE id = '31';
+  UPDATE shop_productinformation SET image_product = 'noyt8.png', image_product2 = 'noyt8opisanie.png'
+  WHERE id = '32';
+
+
+
+UPDATE shop_productinformation SET image_product = 'kofe1.png', image_product2 = 'kofe1opisanie.png'
+  WHERE id = '33';
+  UPDATE shop_productinformation SET image_product = 'kofe2.png', image_product2 = 'kofe2opisanie.png'
+  WHERE id = '34';
+  UPDATE shop_productinformation SET image_product = 'kofe3.png', image_product2 = 'kofe3opisanie.png'
+  WHERE id = '35';
+  UPDATE shop_productinformation SET image_product = 'kofe4.png', image_product2 = 'kofe4opisanie.png'
+  WHERE id = '36';
+  UPDATE shop_productinformation SET image_product = 'kofe5.png', image_product2 = 'kofe5opisanie.png'
+  WHERE id = '37';
+  UPDATE shop_productinformation SET image_product = 'kofe6.png', image_product2 = 'kofe6opisanie.png'
+  WHERE id = '38';
+  UPDATE shop_productinformation SET image_product = 'kofe7.png', image_product2 = 'kofe7opisanie.png'
+  WHERE id = '39';
+  UPDATE shop_productinformation SET image_product = 'kofe8.png', image_product2 = 'kofe8opisanie.png'
+  WHERE id = '40';
+
+
+UPDATE shop_productinformation SET image_product = 'proectori1.png', image_product2 = 'proectori1opisanie.png'
+  WHERE id = '41';
+  UPDATE shop_productinformation SET image_product = 'proectori2.png', image_product2 = 'proectori2opisanie.png'
+  WHERE id = '42';
+  UPDATE shop_productinformation SET image_product = 'proectori3.png', image_product2 = 'proectori3opisanie.png'
+  WHERE id = '43';
+  UPDATE shop_productinformation SET image_product = 'proectori4.png', image_product2 = 'proectori4opisanie.png'
+  WHERE id = '44';
+  UPDATE shop_productinformation SET image_product = 'proectori5.png', image_product2 = 'proectori5opisanie.png'
+  WHERE id = '45';
+  UPDATE shop_productinformation SET image_product = 'proectori6.png', image_product2 = 'proectori6opisanie.png'
+  WHERE id = '46';
+  UPDATE shop_productinformation SET image_product = 'proectori7.png', image_product2 = 'proectori7opisanie.png'
+  WHERE id = '47';
+  UPDATE shop_productinformation SET image_product = 'proectori8.png', image_product2 = 'proectori8opisanie.png'
+  WHERE id = '48';
+
+
+
+
+UPDATE shop_productinformation SET image_product = 'fleshki1.png', image_product2 = 'fleshki1opisanie.png'
+  WHERE id = '49';
+  UPDATE shop_productinformation SET image_product = 'fleshki2.png', image_product2 = 'fleshki2opisanie.png'
+  WHERE id = '50';
+  UPDATE shop_productinformation SET image_product = 'fleshki3.png', image_product2 = 'fleshki3opisanie.png'
+  WHERE id = '51';
+  UPDATE shop_productinformation SET image_product = 'fleshki4.png', image_product2 = 'fleshki4opisanie.png'
+  WHERE id = '52';
+  UPDATE shop_productinformation SET image_product = 'fleshki5.png', image_product2 = 'fleshki5opisanie.png'
+  WHERE id = '53';
+  UPDATE shop_productinformation SET image_product = 'fleshki6.png', image_product2 = 'fleshki6opisanie.png'
+  WHERE id = '54';
+  UPDATE shop_productinformation SET image_product = 'fleshki7.png', image_product2 = 'fleshki7opisanie.png'
+  WHERE id = '55';
+  UPDATE shop_productinformation SET image_product = 'fleshki8.png', image_product2 = 'fleshki8opisanie.png'
+  WHERE id = '56';
+
+
+

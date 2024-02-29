@@ -53,7 +53,7 @@ class productinformation(models.Model):
 #         verbose_name_plural = "Фотографии"
 #     def __str__(self):
 #         return f"{self.id},{self.note}"
-
+#
 # class orders(models.Model):
 #     purchase = models.TextField()
 #     price = models.IntegerField()

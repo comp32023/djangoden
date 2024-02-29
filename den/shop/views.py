@@ -5,36 +5,27 @@ from .models import productinformation, categories
 def index(request):
     return render(request, "index.html")
 
-
 def page_dostavka(request):
     return render(request, "dostavka.html")
-
 
 def catalog(request):
     return render(request, "katalog.html")
 
-
 def order2(request):
     return render(request, "korzina.html")
 
-
 # Каталог товаров - =========================================================================================================================
-
 
 def lections_detail(request, lecture_id): # lecture_id
     tovar = productinformation.objects.filter(id=lecture_id)
-    people = productinformation.objects.filter(category_id=1)
-    for person in people:
-        print(f"{person.id} - {person.name_product}")
-    # people = productinformation.objects.filter(id__range=(1, 12))
+
     context = {
         'tv': tovar,
-        'people': people,
     }
     return render(request, "opisanietovara.html", context)
 
 def televizory(request):
-    products = productinformation.objects.filter(category_id=1)
+    products = productinformation.objects.filter(category_id=1).order_by('id').values()
 
     context = {
         'pr': products,
@@ -44,7 +35,7 @@ def televizory(request):
 
 
 def cold_storage(request):
-    products = productinformation.objects.filter(category_id=2)
+    products = productinformation.objects.filter(category_id=2).order_by('id').values()
 
     context = {
         'pr': products,
@@ -54,7 +45,7 @@ def cold_storage(request):
 
 
 def noytbyki(request):
-    products = productinformation.objects.filter(category_id=3)
+    products = productinformation.objects.filter(category_id=3).order_by('id').values()
 
     context = {
         'pr': products,
@@ -65,7 +56,7 @@ def noytbyki(request):
 
 
 def kofemashini(request):
-    products = productinformation.objects.filter(category_id=4)
+    products = productinformation.objects.filter(category_id=4).order_by('id').values()
 
     context = {
         'pr': products,
@@ -75,7 +66,7 @@ def kofemashini(request):
 
 
 def proektori(request):
-    products = productinformation.objects.filter(category_id=5)
+    products = productinformation.objects.filter(category_id=5).order_by('id').values()
 
     context = {
         'pr': products,
@@ -85,7 +76,7 @@ def proektori(request):
 
 
 def fleshki(request):
-    products = productinformation.objects.filter(category_id=6)
+    products = productinformation.objects.filter(category_id=6).order_by('id').values()
 
     context = {
         'pr': products,
