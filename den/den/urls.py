@@ -13,7 +13,7 @@ urlpatterns = [
      path('delivery', views.page_dostavka, name='delivery'),
      path('catalog/', views.catalog, name='catalog'),
      path('order/', views.order2, name='order'),
-     
+
 #Каталог товаров=================================================================================================================================================================================================
      path('catalog/tovari/<int:lecture_id>/', views.lections_detail, name='catalog_tv2'),
      path('catalog/televizory-i-cifrovoe-tv/', views.televizory, name='catalog/-tv'),
