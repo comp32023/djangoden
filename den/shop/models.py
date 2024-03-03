@@ -28,6 +28,16 @@ class productinformation(models.Model):
     def __str__(self):
         return f"{self.id}, {self.name_product}, Категория продукта - {self.category_id}"
 
+class Contact(models.Model):
+    first_name = models.CharField(max_length=200)
+    last_name = models.CharField(max_length=200)
+    email = models.EmailField(max_length=200)
+    message = models.TextField(max_length=1000)
+
+    def __str__(self):
+        # Будет отображаться следующее поле в панели администрирования
+        return self.email
+
 
 # class sale(models.Model):
 #     id_sale = models.IntegerField(primary_key=True)

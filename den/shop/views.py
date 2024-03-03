@@ -14,6 +14,11 @@ def catalog(request):
 def order2(request):
     return render(request, "korzina.html")
 
+# def message(request):
+#     return render(request, "message.html")
+
+
+
 # Каталог товаров - =========================================================================================================================
 
 def lections_detail(request, lecture_id): # lecture_id

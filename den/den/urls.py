@@ -13,6 +13,10 @@ urlpatterns = [
      path('delivery', views.page_dostavka, name='delivery'),
      path('catalog/', views.catalog, name='catalog'),
      path('order/', views.order2, name='order'),
+     # path('', ContactCreate.as_view(), name='contact_page'),
+     # path('success/', success, name='success_page')
+     # path('send/message', views.message, name='message'),
+
 
 #Каталог товаров=================================================================================================================================================================================================
      path('catalog/tovari/<int:lecture_id>/', views.lections_detail, name='catalog_tv2'),
