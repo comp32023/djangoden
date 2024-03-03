@@ -39,6 +39,20 @@ class Contact(models.Model):
         return self.email
 
 
+class orders(models.Model):
+    purchase = models.TextField()
+    price = models.IntegerField()
+    purchase_note = models.TextField(null=True, blank='None')
+    date = models.IntegerField(null=True, blank='None')
+    order_status = models.TextField(null=True, blank='None')  # статус заказа(в ожидании, ожидает оплату, подтверждён)
+
+    class Meta():
+        verbose_name_plural = "Заказы"
+
+    def __str__(self):
+        return f"{self.id}, {self.purchase}, {self.price},{self.purchase_note},{self.date},{self.order_status}"
+
+
 # class sale(models.Model):
 #     id_sale = models.IntegerField(primary_key=True)
 #     price = models.IntegerField()
@@ -63,16 +77,3 @@ class Contact(models.Model):
 #         verbose_name_plural = "Фотографии"
 #     def __str__(self):
 #         return f"{self.id},{self.note}"
-#
-# class orders(models.Model):
-#     purchase = models.TextField()
-#     price = models.IntegerField()
-#     purchase_note = models.TextField(null=True, blank='None')
-#     date = models.IntegerField()
-#     order_status = models.TextField()  # статус заказа(в ожидании, ожидает оплату, подтверждён)
-#
-#     class Meta():
-#         verbose_name_plural = "Категория"
-#
-#     def __str__(self):
-#         return f"{self.id}, {self.purchase}, {self.price},{self.purchase_note},{self.date},{self.order_status}"

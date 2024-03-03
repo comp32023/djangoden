@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import productinformation, categories
+from .models import productinformation
 
 def index(request):
     return render(request, "index.html")
@@ -31,6 +31,11 @@ def lections_detail(request, lecture_id): # lecture_id
 
 def televizory(request):
     products = productinformation.objects.filter(category_id=1).order_by('id').values()
+
+
+    for item in products:
+        print(item['id'], item['name_product'])
+
 
     context = {
         'pr': products,
